@@ -7,104 +7,65 @@
 //
 
 import SpriteKit
-import GameplayKit
 
-class GameScene: SKScene {
-    
-    var entities = [GKEntity]()
-    var graphs = [String : GKGraph]()
-    
-    private var lastUpdateTime : TimeInterval = 0
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+enum BodyType: UInt32 {
+    case hero = 1
+    case heroTorpedo = 2
+    case heroBomb = 4
+    case enemy = 8
+    case enemyTorpedo = 16
+    case asteroid = 32
+}
+
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    var hero = HeroShip()
+    var enemies : Enemy?
+    var timer : Timer?
+   // var asteroids = [Asteroid]()
+   // let waves = Bundle.main.decode(type: [Wave].self, file: "enemyWaves.json")
+   // let enemyShips = Bundle.main.decode(type: [EnemyShips].self, file: "enemyShips.json")
+   
+    override func didMove(to view: SKView) {
+        if let particles = SKEmitterNode(fileNamed: "starfield.sks"){
+            particles.position = CGPoint(x: 0, y: self.frame.height / 2)
+            particles.advanceSimulationTime(60)
+            particles.zPosition = -1
+            self.addChild(particles)
+        }
+    }
     
     override func sceneDidLoad() {
-
-        self.lastUpdateTime = 0
-        
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        self.size = CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        physicsWorld.contactDelegate = self
+        self.addChild(hero)
+        sendAsteroids()
+        addEnemies()
     }
-    
-    
-    func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
-    }
-    
-    func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
-    }
-    
-    func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let label = self.label {
-            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-        }
-        
-        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-    }
-    
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-        
-        // Initialize _lastUpdateTime if it has not already been
-        if (self.lastUpdateTime == 0) {
-            self.lastUpdateTime = currentTime
+        for child in children {
+            if child.frame.maxX < 0 {
+                if !frame.intersects(child.frame){
+                    child.removeFromParent();
+                }
+            }
         }
-        
-        // Calculate time since last update
-        let dt = currentTime - self.lastUpdateTime
-        
-        // Update entities
-        for entity in self.entities {
-            entity.update(deltaTime: dt)
-        }
-        
-        self.lastUpdateTime = currentTime
     }
+    
+    func addEnemies(){
+        let temp = Enemy()
+        addChild(temp)
+    }
+    
+    func sendAsteroids(){
+        timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(createAsteroids), userInfo: nil, repeats: true)
+    }
+    
+    @objc func createAsteroids(){
+        print("addAsteroids")
+        let temp = Asteroid()
+        temp.move()
+        addChild(temp)
+    }
+    
 }

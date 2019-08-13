@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7876B56230222CF001CA013 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B55230222CF001CA013 /* starfield.sks */; };
+		F7876B5923023F79001CA013 /* enemyShips.json in Resources */ = {isa = PBXBuildFile; fileRef = F7876B5823023F79001CA013 /* enemyShips.json */; };
+		F7876B5B23025097001CA013 /* enemyWaves.json in Resources */ = {isa = PBXBuildFile; fileRef = F7876B5A23025097001CA013 /* enemyWaves.json */; };
+		F7876B5D23025293001CA013 /* Waves.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B5C23025293001CA013 /* Waves.swift */; };
+		F7876B5F2302F33B001CA013 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B5E2302F33B001CA013 /* Decoder.swift */; };
+		F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B602302F6EE001CA013 /* EnemyShips.swift */; };
 		F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC707622EE71A200DDD1BC /* AppDelegate.swift */; };
 		F7EC707922EE71A200DDD1BC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707822EE71A200DDD1BC /* GameScene.sks */; };
 		F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707A22EE71A200DDD1BC /* Actions.sks */; };
@@ -15,9 +21,19 @@
 		F7EC708222EE71A200DDD1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EC708022EE71A200DDD1BC /* Main.storyboard */; };
 		F7EC708422EE71A500DDD1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EC708322EE71A500DDD1BC /* Assets.xcassets */; };
 		F7EC708722EE71A500DDD1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EC708522EE71A500DDD1BC /* LaunchScreen.storyboard */; };
+		F7EC708F22EE731100DDD1BC /* spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC708E22EE731100DDD1BC /* spaceship.swift */; };
+		F7EC709122EE779700DDD1BC /* HeroShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC709022EE779700DDD1BC /* HeroShip.swift */; };
+		F7EC709322EF620D00DDD1BC /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC709222EF620D00DDD1BC /* Asteroid.swift */; };
+		F7EC709522EF621300DDD1BC /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC709422EF621300DDD1BC /* Enemy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7876B55230222CF001CA013 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
+		F7876B5823023F79001CA013 /* enemyShips.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = enemyShips.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		F7876B5A23025097001CA013 /* enemyWaves.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = enemyWaves.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		F7876B5C23025293001CA013 /* Waves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waves.swift; sourceTree = "<group>"; };
+		F7876B5E2302F33B001CA013 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		F7876B602302F6EE001CA013 /* EnemyShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyShips.swift; sourceTree = "<group>"; };
 		F7EC707322EE71A200DDD1BC /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EC707622EE71A200DDD1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7EC707822EE71A200DDD1BC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +44,10 @@
 		F7EC708322EE71A500DDD1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7EC708622EE71A500DDD1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7EC708822EE71A500DDD1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7EC708E22EE731100DDD1BC /* spaceship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceship.swift; sourceTree = "<group>"; };
+		F7EC709022EE779700DDD1BC /* HeroShip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroShip.swift; sourceTree = "<group>"; };
+		F7EC709222EF620D00DDD1BC /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		F7EC709422EF621300DDD1BC /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +82,18 @@
 			children = (
 				F7EC707622EE71A200DDD1BC /* AppDelegate.swift */,
 				F7EC707822EE71A200DDD1BC /* GameScene.sks */,
+				F7876B55230222CF001CA013 /* starfield.sks */,
 				F7EC707A22EE71A200DDD1BC /* Actions.sks */,
 				F7EC707C22EE71A200DDD1BC /* GameScene.swift */,
+				F7EC708E22EE731100DDD1BC /* spaceship.swift */,
+				F7EC709022EE779700DDD1BC /* HeroShip.swift */,
+				F7EC709222EF620D00DDD1BC /* Asteroid.swift */,
+				F7876B5823023F79001CA013 /* enemyShips.json */,
+				F7876B5A23025097001CA013 /* enemyWaves.json */,
+				F7EC709422EF621300DDD1BC /* Enemy.swift */,
+				F7876B602302F6EE001CA013 /* EnemyShips.swift */,
+				F7876B5C23025293001CA013 /* Waves.swift */,
+				F7876B5E2302F33B001CA013 /* Decoder.swift */,
 				F7EC707E22EE71A200DDD1BC /* GameViewController.swift */,
 				F7EC708022EE71A200DDD1BC /* Main.storyboard */,
 				F7EC708322EE71A500DDD1BC /* Assets.xcassets */,
@@ -133,8 +163,11 @@
 			files = (
 				F7EC708222EE71A200DDD1BC /* Main.storyboard in Resources */,
 				F7EC707922EE71A200DDD1BC /* GameScene.sks in Resources */,
+				F7876B5923023F79001CA013 /* enemyShips.json in Resources */,
 				F7EC708422EE71A500DDD1BC /* Assets.xcassets in Resources */,
 				F7EC708722EE71A500DDD1BC /* LaunchScreen.storyboard in Resources */,
+				F7876B56230222CF001CA013 /* starfield.sks in Resources */,
+				F7876B5B23025097001CA013 /* enemyWaves.json in Resources */,
 				F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,8 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7EC709522EF621300DDD1BC /* Enemy.swift in Sources */,
+				F7EC709122EE779700DDD1BC /* HeroShip.swift in Sources */,
 				F7EC707D22EE71A200DDD1BC /* GameScene.swift in Sources */,
 				F7EC707F22EE71A200DDD1BC /* GameViewController.swift in Sources */,
+				F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */,
+				F7876B5F2302F33B001CA013 /* Decoder.swift in Sources */,
+				F7876B5D23025293001CA013 /* Waves.swift in Sources */,
+				F7EC708F22EE731100DDD1BC /* spaceship.swift in Sources */,
+				F7EC709322EF620D00DDD1BC /* Asteroid.swift in Sources */,
 				F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,13 +336,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Jack.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -313,13 +354,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Jack.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

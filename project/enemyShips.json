@@ -1,0 +1,17 @@
+[
+    {
+        "name": "spacecraft2",
+        "damage": 30,
+        "health": 100,
+    },
+    {
+        "name": "spacecraft3",
+        "damage": 45,
+        "health": 100,
+    },
+    {
+        "name": "spacecraft4",
+        "damage": 50,
+        "health": 100,
+    },
+]
