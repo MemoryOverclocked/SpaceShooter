@@ -11,6 +11,10 @@
 		F7876B5D23025293001CA013 /* Waves.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B5C23025293001CA013 /* Waves.swift */; };
 		F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B602302F6EE001CA013 /* EnemyShips.swift */; };
 		F7876B6323036610001CA013 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B6223036610001CA013 /* Explosion.sks */; };
+		F7876B652303A6C9001CA013 /* Engine.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B642303A6C9001CA013 /* Engine.sks */; };
+		F7876B6B2303AC03001CA013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7876B692303AC03001CA013 /* Assets.xcassets */; };
+		F7876B712303BC6B001CA013 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B702303BC6B001CA013 /* MenuScene.sks */; };
+		F7876B732303BD75001CA013 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B722303BD75001CA013 /* MenuScene.swift */; };
 		F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC707622EE71A200DDD1BC /* AppDelegate.swift */; };
 		F7EC707922EE71A200DDD1BC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707822EE71A200DDD1BC /* GameScene.sks */; };
 		F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707A22EE71A200DDD1BC /* Actions.sks */; };
@@ -30,6 +34,10 @@
 		F7876B5C23025293001CA013 /* Waves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waves.swift; sourceTree = "<group>"; };
 		F7876B602302F6EE001CA013 /* EnemyShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyShips.swift; sourceTree = "<group>"; };
 		F7876B6223036610001CA013 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		F7876B642303A6C9001CA013 /* Engine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Engine.sks; sourceTree = "<group>"; };
+		F7876B692303AC03001CA013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7876B702303BC6B001CA013 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		F7876B722303BD75001CA013 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		F7EC707322EE71A200DDD1BC /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EC707622EE71A200DDD1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7EC707822EE71A200DDD1BC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -60,6 +68,7 @@
 		F7EC706A22EE71A200DDD1BC = {
 			isa = PBXGroup;
 			children = (
+				F7876B692303AC03001CA013 /* Assets.xcassets */,
 				F7EC707522EE71A200DDD1BC /* project */,
 				F7EC707422EE71A200DDD1BC /* Products */,
 			);
@@ -78,12 +87,15 @@
 			children = (
 				F7EC707622EE71A200DDD1BC /* AppDelegate.swift */,
 				F7EC707822EE71A200DDD1BC /* GameScene.sks */,
+				F7876B702303BC6B001CA013 /* MenuScene.sks */,
+				F7876B722303BD75001CA013 /* MenuScene.swift */,
 				F7876B55230222CF001CA013 /* starfield.sks */,
 				F7EC707A22EE71A200DDD1BC /* Actions.sks */,
 				F7EC707C22EE71A200DDD1BC /* GameScene.swift */,
 				F7876B6223036610001CA013 /* Explosion.sks */,
 				F7EC708E22EE731100DDD1BC /* spaceship.swift */,
 				F7EC709022EE779700DDD1BC /* HeroShip.swift */,
+				F7876B642303A6C9001CA013 /* Engine.sks */,
 				F7EC709222EF620D00DDD1BC /* Asteroid.swift */,
 				F7EC709422EF621300DDD1BC /* Enemy.swift */,
 				F7876B602302F6EE001CA013 /* EnemyShips.swift */,
@@ -158,10 +170,13 @@
 				F7EC708222EE71A200DDD1BC /* Main.storyboard in Resources */,
 				F7EC707922EE71A200DDD1BC /* GameScene.sks in Resources */,
 				F7EC708422EE71A500DDD1BC /* Assets.xcassets in Resources */,
+				F7876B712303BC6B001CA013 /* MenuScene.sks in Resources */,
 				F7EC708722EE71A500DDD1BC /* LaunchScreen.storyboard in Resources */,
+				F7876B6B2303AC03001CA013 /* Assets.xcassets in Resources */,
 				F7876B56230222CF001CA013 /* starfield.sks in Resources */,
 				F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */,
 				F7876B6323036610001CA013 /* Explosion.sks in Resources */,
+				F7876B652303A6C9001CA013 /* Engine.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +194,7 @@
 				F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */,
 				F7876B5D23025293001CA013 /* Waves.swift in Sources */,
 				F7EC708F22EE731100DDD1BC /* spaceship.swift in Sources */,
+				F7876B732303BD75001CA013 /* MenuScene.swift in Sources */,
 				F7EC709322EF620D00DDD1BC /* Asteroid.swift in Sources */,
 				F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */,
 			);
