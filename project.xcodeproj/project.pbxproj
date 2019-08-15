@@ -15,6 +15,8 @@
 		F7876B6B2303AC03001CA013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7876B692303AC03001CA013 /* Assets.xcassets */; };
 		F7876B712303BC6B001CA013 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B702303BC6B001CA013 /* MenuScene.sks */; };
 		F7876B732303BD75001CA013 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B722303BD75001CA013 /* MenuScene.swift */; };
+		F7876B9B2304E061001CA013 /* LandingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B9A2304E061001CA013 /* LandingScene.sks */; };
+		F7876B9E2305E166001CA013 /* PlayerData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7876B9C2305E166001CA013 /* PlayerData.xcdatamodeld */; };
 		F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EC707622EE71A200DDD1BC /* AppDelegate.swift */; };
 		F7EC707922EE71A200DDD1BC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707822EE71A200DDD1BC /* GameScene.sks */; };
 		F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7EC707A22EE71A200DDD1BC /* Actions.sks */; };
@@ -38,6 +40,8 @@
 		F7876B692303AC03001CA013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7876B702303BC6B001CA013 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		F7876B722303BD75001CA013 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		F7876B9A2304E061001CA013 /* LandingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LandingScene.sks; sourceTree = "<group>"; };
+		F7876B9D2305E166001CA013 /* PlayerData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlayerData.xcdatamodel; sourceTree = "<group>"; };
 		F7EC707322EE71A200DDD1BC /* project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EC707622EE71A200DDD1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7EC707822EE71A200DDD1BC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -133,9 +137,11 @@
 				F7EC707622EE71A200DDD1BC /* AppDelegate.swift */,
 				F7876B7523047F0C001CA013 /* Menu */,
 				F7EC707E22EE71A200DDD1BC /* GameViewController.swift */,
+				F7876B9A2304E061001CA013 /* LandingScene.sks */,
 				F7EC708022EE71A200DDD1BC /* Main.storyboard */,
 				F7EC708322EE71A500DDD1BC /* Assets.xcassets */,
 				F7EC708522EE71A500DDD1BC /* LaunchScreen.storyboard */,
+				F7876B9C2305E166001CA013 /* PlayerData.xcdatamodeld */,
 				F7EC708822EE71A500DDD1BC /* Info.plist */,
 			);
 			path = project;
@@ -205,6 +211,7 @@
 				F7876B712303BC6B001CA013 /* MenuScene.sks in Resources */,
 				F7EC708722EE71A500DDD1BC /* LaunchScreen.storyboard in Resources */,
 				F7876B6B2303AC03001CA013 /* Assets.xcassets in Resources */,
+				F7876B9B2304E061001CA013 /* LandingScene.sks in Resources */,
 				F7876B56230222CF001CA013 /* starfield.sks in Resources */,
 				F7EC707B22EE71A200DDD1BC /* Actions.sks in Resources */,
 				F7876B6323036610001CA013 /* Explosion.sks in Resources */,
@@ -225,6 +232,7 @@
 				F7EC707F22EE71A200DDD1BC /* GameViewController.swift in Sources */,
 				F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */,
 				F7876B5D23025293001CA013 /* Waves.swift in Sources */,
+				F7876B9E2305E166001CA013 /* PlayerData.xcdatamodeld in Sources */,
 				F7EC708F22EE731100DDD1BC /* spaceship.swift in Sources */,
 				F7876B732303BD75001CA013 /* MenuScene.swift in Sources */,
 				F7EC709322EF620D00DDD1BC /* Asteroid.swift in Sources */,
@@ -428,6 +436,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7876B9C2305E166001CA013 /* PlayerData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7876B9D2305E166001CA013 /* PlayerData.xcdatamodel */,
+			);
+			currentVersion = F7876B9D2305E166001CA013 /* PlayerData.xcdatamodel */;
+			path = PlayerData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F7EC706B22EE71A200DDD1BC /* Project object */;
 }
