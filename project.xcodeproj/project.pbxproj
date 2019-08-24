@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F78341BC230B27D900C4E961 /* Torpedo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78341BB230B27D900C4E961 /* Torpedo.swift */; };
 		F7876B56230222CF001CA013 /* starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7876B55230222CF001CA013 /* starfield.sks */; };
 		F7876B5D23025293001CA013 /* Waves.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B5C23025293001CA013 /* Waves.swift */; };
 		F7876B612302F6EE001CA013 /* EnemyShips.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7876B602302F6EE001CA013 /* EnemyShips.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F78341BB230B27D900C4E961 /* Torpedo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torpedo.swift; sourceTree = "<group>"; };
 		F7876B55230222CF001CA013 /* starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starfield.sks; sourceTree = "<group>"; };
 		F7876B5C23025293001CA013 /* Waves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waves.swift; sourceTree = "<group>"; };
 		F7876B602302F6EE001CA013 /* EnemyShips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyShips.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F7EC709422EF621300DDD1BC /* Enemy.swift */,
 				F7EC708E22EE731100DDD1BC /* spaceship.swift */,
 				F7876B602302F6EE001CA013 /* EnemyShips.swift */,
+				F78341BB230B27D900C4E961 /* Torpedo.swift */,
 				F7876B5C23025293001CA013 /* Waves.swift */,
 			);
 			path = Classes;
@@ -235,6 +238,7 @@
 				F7876B9E2305E166001CA013 /* PlayerData.xcdatamodeld in Sources */,
 				F7EC708F22EE731100DDD1BC /* spaceship.swift in Sources */,
 				F7876B732303BD75001CA013 /* MenuScene.swift in Sources */,
+				F78341BC230B27D900C4E961 /* Torpedo.swift in Sources */,
 				F7EC709322EF620D00DDD1BC /* Asteroid.swift in Sources */,
 				F7EC707722EE71A200DDD1BC /* AppDelegate.swift in Sources */,
 			);
